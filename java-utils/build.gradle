@@ -1,0 +1,12 @@
+plugins {
+    //省略一些代码...
+    id 'java'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+apply from:"../publishJavaLib.gradle"
