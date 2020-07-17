@@ -22,11 +22,25 @@
 	}
 	```
 2.在module 中添加依赖
+- 只引用java-utils，适用于仅java项目中
+
+```
+implementation 'com.github.itxiaox.utils:java-utils:Tag'
+```
+- 只引用android-utils,适用于android-utils
 ```
 // 如果需要添加android-utils
-implementation 'com.github.itxiaox.utils:android_utils:Tag'
-//如果需要java-utils
-implementation 'com.github.itxiaox.utils:java_utils:Tag'
+implementation 'com.github.itxiaox.utils:android-utils:Tag'
+```
+- 同时需要android-utils和java-utils
+
+```
+implementation 'com.github.itxiaox.utils:java-utils:Tag'
+implementation 'com.github.itxiaox.utils:android-utils:Tag'
+```
+或
+```
+implementation 'com.github.itxiaox:utils:Tag'
 ```
  
 # LICENSE
