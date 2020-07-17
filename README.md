@@ -27,7 +27,7 @@
 ```
 implementation 'com.github.itxiaox.utils:java-utils:Tag'
 ```
-- 只引用android-utils,适用于android-utils
+- 只引用android-utils,适用于android项目
 ```
 // 如果需要添加android-utils
 implementation 'com.github.itxiaox.utils:android-utils:Tag'
