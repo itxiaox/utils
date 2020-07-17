@@ -1,8 +1,8 @@
-# Android Utils 常用工具类
+#  Utils 常用工具类
 
-Andorid常用工具类，通过项目实践总结积累而成
+常用工具类，通过项目实践总结积累而成,包含android-utils、java-utils工具类
 
-[![](https://jitpack.io/v/itxiaox/android_utils.svg)](https://jitpack.io/#itxiaox/utils)
+[![](https://jitpack.io/v/itxiaox/utils.svg)](https://jitpack.io/#itxiaox/utils)
 
 [最新API文档](https://javadoc.jitpack.io/com/github/itxiaox/utils/latest/javadoc/)
 
