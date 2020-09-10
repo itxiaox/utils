@@ -19,13 +19,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ActivityManager {
 	
 	private static CopyOnWriteArrayList<Activity> mActivityStack;
+
 	private static ActivityManager mAppManager;
 
 	/**
 	 * 屏蔽直接new对象
 	 */
 	private ActivityManager() {
-
 	}
 
 	/**

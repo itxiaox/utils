@@ -12,9 +12,13 @@ buildscript {
     }
 }
 
+ext.localMaven = project.rootDir.path+"\\repository"
+//ext.localMaven "F:\\maven\\repo"
+print("localMaven=$localMaven")
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
+        maven { url localMaven}
         google()
         jcenter()
     }

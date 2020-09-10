@@ -45,4 +45,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 }
 //添加发布到jitpack脚本
-apply from :"../publishAndroidLib.gradle"
+apply from : "publishNative.gradle"
+//apply from :"../publishAndroidLib.gradle"
+//apply from :"publishPrivateMaven.gradle"

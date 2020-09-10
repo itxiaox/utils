@@ -1,13 +1,6 @@
 package com.itxiaox.android.xutils.file;
 
 
-import android.content.Context;
-import android.os.Build;
-import android.os.Environment;
-import android.util.Log;
-
-import java.io.File;
-
 /**
  * Android中内部存储，外部存储的概念
  *概念：注意内部存储不是内存。内部存储位于系统中很特殊的一个位置，如果你想将文件存储于内部存储中，

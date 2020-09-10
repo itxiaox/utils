@@ -29,7 +29,6 @@ public class ArraysUtils {
      * @param objects 要查询的数组
      * @param o 要查询的对象
      * @return 返回搜到对象的索引值 </br>
-     * 如果
      */
     public static int search(Object[] objects,Object o){
         return Arrays.binarySearch(objects,o);

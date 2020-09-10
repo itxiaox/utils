@@ -1,14 +1,14 @@
 -Xdoclint:none '-quiet'
+-charSet 'UTF-8'
 -charset 'UTF-8'
 -classpath 'F:\\code\\utils\\java-utils\\build\\classes\\java\\main;F:\\code\\utils\\java-utils\\build\\resources\\main;D:\\soft\\Android\\IDE\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.8.6\\9180733b7df8542621dc12e21e87557e8c99b8cb\\gson-2.8.6.jar'
 -d 'F:\\code\\utils\\java-utils\\build\\docs\\javadoc'
--doctitle 'java-utils 1.0.9 API'
+-doctitle 'java-utils API'
 -encoding 'UTF-8'
 -link 'http://docs.oracle.com/javase/7/docs/api'
--link 'http://docs.oracle.com/javase/8/docs/api'
 -notimestamp 
 -quiet 
--windowtitle 'java-utils 1.0.9 API'
+-windowtitle 'java-utils API'
 'F:\\code\\utils\\java-utils\\src\\main\\java\\com\\itxiaox\\java\\utils\\data\\ArraysUtils.java'
 'F:\\code\\utils\\java-utils\\src\\main\\java\\com\\itxiaox\\java\\utils\\data\\ConvertUtils.java'
 'F:\\code\\utils\\java-utils\\src\\main\\java\\com\\itxiaox\\java\\utils\\data\\EnumUtil.java'

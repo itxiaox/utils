@@ -114,7 +114,7 @@ import java.util.Locale;
  */
 public class DateUtils {
 
-    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+    private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
 
     /**
      * 获取当前的时间，包含日期和时间
@@ -350,10 +350,6 @@ public class DateUtils {
         }
         return str;
     }
-
-
-
-
 
     /**
      * 解析日期为大写
@@ -610,7 +606,6 @@ public class DateUtils {
                 .format(new Date(timestamp));
     }
 
-
     /**
      * 格式化日期
      * @param format 日期格式
@@ -621,7 +616,6 @@ public class DateUtils {
         SimpleDateFormat sdf = new SimpleDateFormat(format, Locale.getDefault());
         return sdf.format(date);
     }
-
 
     /**
      * 日期大小比较:

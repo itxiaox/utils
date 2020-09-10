@@ -1,5 +1,4 @@
 include ':android-utils'
 include ':java-utils'
-include ':test'
-include ':app'
+include ':sample'
 rootProject.name = "utils"

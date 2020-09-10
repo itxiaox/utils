@@ -75,7 +75,6 @@ class LogCatUtils {
         }
     }
 
-
     /**
      * 将logCat 日志信息输出到文件中，便于后面跟踪调试
      * @param fileName

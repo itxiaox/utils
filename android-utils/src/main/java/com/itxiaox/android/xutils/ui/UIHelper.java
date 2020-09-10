@@ -88,21 +88,23 @@ public class UIHelper {
      * @param format 字符串format
      * @param args 格式化参数
      */
-    public static void toast(Context context,  String format,
+    public static Toast toast(Context context,  String format,
                                  Object... args) {
         if (toast==null) {
             toast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
         }
         toast.setText(StringUtil.format(format, args));
         toast.show();
+        return toast;
     }
+
 
     /**
      * 显示toast
      * @param format
      * @param args
      */
-    public static void toast(String format,
+    public static Toast toast(String format,
                              Object... args){
         if (ContextUtils.getContext()==null){
             throw new NullPointerException("Context is null,ContextUtils#init() first ");
@@ -112,7 +114,9 @@ public class UIHelper {
         }
         toast.setText(StringUtil.format(format, args));
         toast.show();
+        return toast;
     }
+
 
     /**
      * 设置TextView 的Drawable left/start/right/end/top/bottom

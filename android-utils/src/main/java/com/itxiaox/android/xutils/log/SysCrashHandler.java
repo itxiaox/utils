@@ -9,9 +9,6 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Looper;
 
-import com.itxiaox.android.xutils.app.SystemUtils;
-import com.itxiaox.android.xutils.fun.OXConsumer;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

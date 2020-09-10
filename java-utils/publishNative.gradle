@@ -1,0 +1,22 @@
+//发布到本地的maven仓库
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.project {
+                // 唯一标识（通常为模块包名，也可以任意）
+                groupId 'com.github.itxiaox.utils'
+                // 项目名称（通常为类库模块名称，也可以任意）
+                artifactId 'java-utils'
+                // 项目版本号
+                version '1.0.1'
+            }
+            // 自定义本地仓库路径，此处是项目根目录下的 repository目录中
+            repository(url: uri("../repository"))
+            //也可以知道保存绝对路径F:/maven/repo
+            // repository(url: uri("F:/maven/repo"))
+        }
+    }
+    //添加生成javadoc脚本
+    apply from : "javadoc.gradle"
+}

@@ -95,7 +95,12 @@ public class ConvertUtils {
         buffer.append("]");
         return buffer.toString();
     }
-
+    /**
+     * 将map转为String可用于打印输出
+     * 可用于日志打印输出
+     * @param map
+     * @return
+     */
     public static <K, V> String mapToString(Map<K, V> map) {
         StringBuilder buffer = new StringBuilder();
         buffer.append("{");
@@ -137,7 +142,6 @@ public class ConvertUtils {
 
     /**
      * double数据转float数据
-     *
      * @param f 传入float类型数据
      * @return 返回double类型数据
      */
