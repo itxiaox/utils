@@ -5,9 +5,12 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
+import android.app.Service;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -30,7 +33,8 @@ public class DeviceUtils {
 
 
     /**
-     * 获取手机的唯一标识, 此方法是拼接的UUID, 通过IMEI, 序列号，随机码等综合生成，当没有READ_PHONE_STATE READ_PHONE_STATE
+     * 获取手机的唯一标识, 此方法是拼接的UUID, 通过IMEI, 序列号，随机码等综合生成，
+     * 当没有READ_PHONE_STATE READ_PHONE_STATE
      * 权限的时候，获取的是guid，然后将guid保存到sp中，app卸载重装或者清理sp都会到账guid不同
      * <p>Requires Permission:
      *  {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
@@ -457,5 +461,22 @@ public class DeviceUtils {
 
         buffer = DeviceUtils.buildInfo(buffer);
         return buffer.toString();
+    }
+
+    /**
+     * 开启震动
+     */
+    public static void  startDeviceVibrate(Context context) {
+        Vibrator vibrator = (Vibrator) context.getSystemService(Service.VIBRATOR_SERVICE);
+        // 判断当前设备是否有震动器
+        if (vibrator.hasVibrator()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                // long milliseconds：震动毫秒数, int amplitude：震动强度，
+                // 该值必须介于 1 ～ 255 之间，或者 DEFAULT_AMPLITUDE
+                vibrator.vibrate(VibrationEffect.createOneShot(100,
+                        VibrationEffect.DEFAULT_AMPLITUDE));
+//              vibrator.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE))
+            }
+        }
     }
 }
