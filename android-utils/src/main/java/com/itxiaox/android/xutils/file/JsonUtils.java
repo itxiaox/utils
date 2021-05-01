@@ -1,7 +1,6 @@
 package com.itxiaox.android.xutils.file;
 
 
-import android.text.TextUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -47,7 +46,7 @@ public class JsonUtils {
     public static <T> JSONArray list2JsonArray(List<T> list){
         JSONArray jsonArray = new JSONArray();
         for (T t: list) {
-            jsonArray.put(t);
+            jsonArray.put(beanToJSONObject(t));
         }
         return jsonArray;
     }
@@ -78,7 +77,7 @@ public class JsonUtils {
         return true;
     }
     public static boolean isJSONArray(String string){
-        if (TextUtils.isEmpty(string)){
+        if (string==null||string.equals("")){
             return false;
         }
         JsonElement jsonElement;
@@ -96,7 +95,7 @@ public class JsonUtils {
         return true;
     }
     public static boolean isJSONObject(String string){
-        if (TextUtils.isEmpty(string)){
+        if (string==null||string.equals("")){
             return false;
         }
         JsonElement jsonElement;

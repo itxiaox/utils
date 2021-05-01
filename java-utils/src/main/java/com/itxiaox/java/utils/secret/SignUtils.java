@@ -54,11 +54,6 @@ public class SignUtils {
         byte[] bytes = null;
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//                bytes = md5.digest(data.getBytes(StandardCharsets.UTF_8));
-//            }else {
-//
-//            }
             bytes = md5.digest(data.getBytes("UTF-8"));
         } catch (NoSuchAlgorithmException e) {
             throw new IOException(e.toString());

@@ -4,7 +4,7 @@
             "outputFile": "F:\\code\\utils\\sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
             "map": [
                 {
-                    "source": "D:\\soft\\Android\\IDE\\.gradle\\caches\\transforms-2\\files-2.1\\88e55b306bdb75b8359d74621a722e10\\appcompat-1.1.0\\res\\values-pa\\values-pa.xml",
+                    "source": "E:\\IDEA\\Android\\.gradle\\caches\\transforms-2\\files-2.1\\88e55b306bdb75b8359d74621a722e10\\appcompat-1.1.0\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "D:\\soft\\Android\\IDE\\.gradle\\caches\\transforms-2\\files-2.1\\8e3d1afee05af8f2afb326e2b03df140\\core-1.1.0\\res\\values-pa\\values-pa.xml",
+                    "source": "E:\\IDEA\\Android\\.gradle\\caches\\transforms-2\\files-2.1\\8e3d1afee05af8f2afb326e2b03df140\\core-1.1.0\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
