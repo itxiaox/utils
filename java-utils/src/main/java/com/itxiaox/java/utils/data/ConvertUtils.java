@@ -149,4 +149,5 @@ public class ConvertUtils {
         BigDecimal b = new BigDecimal(String.valueOf(f));
         return b.doubleValue();
     }
+
 }

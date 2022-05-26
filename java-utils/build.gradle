@@ -9,6 +9,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 }
 
-//apply from:"../publishJavaLib.gradle"
-apply from : "publishNative.gradle"
+apply from:"../publishJavaLib.gradle"
+//apply from : "publishNative.gradle"
 

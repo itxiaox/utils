@@ -6,12 +6,14 @@ import android.util.Log;
 import androidx.test.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import com.google.gson.JsonArray;
 import com.itxiaox.android.xutils.file.FileUtils;
 import com.itxiaox.android.xutils.file.JsonUtils;
 import com.itxiaox.android.xutils.file.JsonUtilsTest;
 import com.itxiaox.android.xutils.log.LogUtils;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -60,25 +62,4 @@ public class FileUtilsTest {
     public int stepNext(int i){
         return i*2;
     }
-    class User {
-        private String name;
-        private Integer age;
-
-        public User(String name, Integer age) {
-            this.name = name;
-            this.age = age;
-        }
-    }
-    @Test
-    public void testList2JsonArray() {
-        List list = new ArrayList();
-        list.add(new User("张", 30));
-        list.add(new User("李2", 25));
-        list.add(new User("昂2", 24));
-
-        JSONArray jsonArray = JsonUtils.list2JsonArray(list);
-
-        System.out.println("jsonarray:" + jsonArray);
-    }
-
 }

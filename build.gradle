@@ -11,14 +11,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
-ext.localMaven = project.rootDir.path+"\\repository"
-//ext.localMaven "F:\\maven\\repo"
-print("localMaven=$localMaven")
+//ext.localMaven = project.rootDir.path+"\\repository"
 allprojects {
     repositories {
+//        maven { url 'file://' + new File('F:\\maven\\repo').absolutePath }
         maven { url 'https://jitpack.io' }
-        maven { url localMaven}
         google()
         jcenter()
     }

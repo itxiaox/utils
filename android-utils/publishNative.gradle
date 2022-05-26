@@ -6,12 +6,13 @@ uploadArchives {
     repositories {
         mavenDeployer {
             pom.project {
-                pom.groupId = "com.github.itxiaox.utils"// 唯一标识（通常为模块包名，也可以任意）
+                pom.groupId = "com.github.itxiaox.utils.native"// 唯一标识（通常为模块包名，也可以任意）
                 pom.artifactId = "android-utils" // 项目名称（通常为类库模块名称，也可以任意）
-                pom.version = "1.0.0" // 版本号
+                pom.version = "1.0.3" // 版本号
             }
             // 自定义本地仓库路径，此处是项目根目录下的 repository目录中
-            repository(url: uri("../repository"))
+//            repository(url: uri("../repository"))
+            repository(url: uri("F:/maven/repo"))
         }
     }
 
